@@ -1,0 +1,6 @@
+c:\users\user\documents\visual studio 2012\Projects\MultithreadingAnd\MultithreadingAnd\bin\Debug\MultithreadingAnd.exe.config
+c:\users\user\documents\visual studio 2012\Projects\MultithreadingAnd\MultithreadingAnd\bin\Debug\MultithreadingAnd.exe
+c:\users\user\documents\visual studio 2012\Projects\MultithreadingAnd\MultithreadingAnd\bin\Debug\MultithreadingAnd.pdb
+c:\users\user\documents\visual studio 2012\Projects\MultithreadingAnd\MultithreadingAnd\obj\Debug\MultithreadingAnd.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2012\Projects\MultithreadingAnd\MultithreadingAnd\obj\Debug\MultithreadingAnd.exe
+c:\users\user\documents\visual studio 2012\Projects\MultithreadingAnd\MultithreadingAnd\obj\Debug\MultithreadingAnd.pdb
