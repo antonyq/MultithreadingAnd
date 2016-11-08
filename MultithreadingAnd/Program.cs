@@ -28,15 +28,26 @@ namespace MultithreadingAnd
 			Thread gThread = new Thread(g);
 			fThread.Start(x);
 			gThread.Start(x);
-            while (fThread.ThreadState == System.Threading.ThreadState.Running || gThread.ThreadState == System.Threading.ThreadState.Running)
+            while (fThread.ThreadState == ThreadState.Running || gThread.ThreadState == ThreadState.Running)
             {
-                Thread.Sleep(2000);
+	            if (fThread.ThreadState != ThreadState.Running && !Convert.ToBoolean(resultF))
+	            {
+					gThread.Abort();
+					Console.WriteLine("f(x) && g(x) == false");
+	            }
+				else if (gThread.ThreadState != ThreadState.Running && !Convert.ToBoolean(resultG))
+				{
+					fThread.Abort();
+					Console.WriteLine("f(x) && g(x) == false");
+				}
+
+	            Thread.Sleep(2000);
                 DialogForm form = new DialogForm();
                 form.ShowDialog();
                 if (form.choice == Choice.ContinueEver)
                 {
                     fThread.Join();
-                    gThread.Join(); // Klini logic 
+                    gThread.Join(); 
                 }
                 else if (form.choice == Choice.Cancel)
                 {
@@ -44,9 +55,9 @@ namespace MultithreadingAnd
                     gThread.Abort();
                 }
             }
-            if (fThread.ThreadState == System.Threading.ThreadState.Stopped && gThread.ThreadState == System.Threading.ThreadState.Stopped)
+            if (fThread.ThreadState == ThreadState.Stopped && gThread.ThreadState == ThreadState.Stopped)
             {
-                Console.WriteLine("f(x) && g(x) == " + (Convert.ToBoolean(resultF) && Convert.ToBoolean(resultG)).ToString());
+                Console.WriteLine("f(x) && g(x) == " + (Convert.ToBoolean(resultF) && Convert.ToBoolean(resultG)));
             }
             else
             {

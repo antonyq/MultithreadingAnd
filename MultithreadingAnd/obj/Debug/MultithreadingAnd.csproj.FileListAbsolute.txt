@@ -12,3 +12,5 @@ D:\Projects\C#\MultithreadingAnd\MultithreadingAnd\bin\Debug\MultithreadingAnd.p
 D:\Projects\C#\MultithreadingAnd\MultithreadingAnd\obj\Debug\MultithreadingAnd.csprojResolveAssemblyReference.cache
 D:\Projects\C#\MultithreadingAnd\MultithreadingAnd\obj\Debug\MultithreadingAnd.DialogForm.resources
 D:\Projects\C#\MultithreadingAnd\MultithreadingAnd\obj\Debug\MultithreadingAnd.csproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2012\Projects\MultithreadingAnd\MultithreadingAnd\obj\Debug\MultithreadingAnd.DialogForm.resources
+C:\Users\User\Documents\Visual Studio 2012\Projects\MultithreadingAnd\MultithreadingAnd\obj\Debug\MultithreadingAnd.csproj.GenerateResource.Cache
